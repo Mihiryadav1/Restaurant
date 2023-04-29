@@ -1,0 +1,241 @@
+* {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    font-family: Segoe UI;
+    box-sizing: border-box;
+}
+
+/*------------Common CSS-------------*/
+.section-title {
+    color: #e97024;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* display: block; */
+    left: auto;
+    right: auto;
+    background-color: #e97024;
+    min-width: 8.7rem;
+    height: 1px;
+}
+
+/*------------Navbar CSS------------*/
+.nav-bar-section {
+    position: sticky;
+    z-index: 100;
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+    color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+    background-color: #cbbcb1;
+}
+
+.mask-custom {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .15);
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+}
+
+.navbar-nav .nav-item a {
+    color: white;
+}
+.navbar-nav .nav-item a:hover {
+    color: #e97024;
+}
+
+/* ------------------banner css---------------- */
+.hero-section {
+    padding-top: 20%;
+    background-image: url(./images/hero.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+.big-words {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+
+}
+
+/*=====About Us CSS============*/
+
+
+.about-left {
+    /* background-color: red   ; */
+    background-image: url(./images/backdrop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.aboutus-content {
+    padding: 70px;
+    color: white;
+
+}
+
+.para {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------- */
+.cusine-div img {
+    width: 70%;
+    height: 200px;
+}
+
+.para-btn {
+    background-color: transparent;
+    color: #e97024;
+    border: 2px solid white;
+    padding: 6px 13px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.para-btn:hover {
+    color: white;
+    border: 0;
+    background-color: #e97024;
+}
+
+
+/*Details CSS*/
+
+.icon i {
+    font-size: 32px;
+    transition: 0.3s;
+}
+
+.icon i:hover {
+    font-size: 38px;
+    color: white !important;
+    cursor: pointer;
+}
+
+.details {
+    background-color: #110404;
+    font-size: 20px;
+}
+
+.detail-content p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.detail-content h6 {
+    font-size: 1.1rem;
+    letter-spacing: 2.2px;
+}
+
+.service-1 i {
+    font-size: 30px;
+    color: #e97024;
+    transition: 0.3s;
+}
+
+.service-2 i {
+    font-size: 30px;
+    color: #e97024;
+    transition: 0.3s;
+}
+
+.service-3 i {
+    font-size: 30px;
+    color: #e97024;
+    transition: 0.3s;
+}
+
+.service-1 i:hover {
+    color: white;
+}
+
+.service-2 i:hover {
+    color: white;
+}
+
+.service-3 i:hover {
+    color: white;
+}
+
+.icons {
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid white; */
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 13px;
+    border-radius: 10px;
+}
+
+.services {
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/*Menu Section*/
+.menu-section{
+    padding-top: 30px;
+}
+.menu-img img{
+    width: 100%;
+    transition: transform 0.25s;
+}
+.menu-img {
+    overflow: hidden;
+}
+.menu-img :hover{
+    transform: scale(1.2);
+    overflow: hidden;
+}
+.menu-content{
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; */
+}
