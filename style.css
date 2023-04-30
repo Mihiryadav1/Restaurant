@@ -3,6 +3,10 @@
     margin: 0px 0px;
     font-family: Segoe UI;
     box-sizing: border-box;
+   
+}
+body{
+     overflow-x: hidden;
 }
 
 /*------------Common CSS-------------*/
@@ -228,13 +232,12 @@
     padding-top: 30px;
 }
 .menu-img img{
-    width: 100%;
-    transition: transform 0.25s;
+    /* opacity: 0.3; */
+    width:70%; 
+    transition: transform 0.25s;    
 }
-.menu-img {
-    overflow: hidden;
-}
-.menu-img :hover{
+
+.menu-img img:hover{
     transform: scale(1.2);
     overflow: hidden;
 }
@@ -250,6 +253,11 @@
 }
 .menu-btn:hover{
 
+}
+
+
+@media screen and (min-width: 770px) {
+   
 }
 #myBtn {
     display: none; /* Hidden by default */
@@ -270,6 +278,52 @@
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
+
+
+
+
+  /* Testimonials css */
+.testimonials-content{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      
+}
+.t1{
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    color: white;
+}
+.testimonials-content::before{
+    content:"";
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    background-color: #110404;
+    top: -24px;
+    left: 45%;
+    /* border: 1px solid white; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.quote{
+    background-image: url(./images/hotel.jpg);
+    background-size: cover;
+    color: white    ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-position-y: -320px;
+    /* color: white; */
+}
+
+
+  
   footer{
 /*     
         background-image: url(./images/banner.jpg);
@@ -281,4 +335,20 @@
         */
         background-color: #141214;
         margin-top: 40px;
+  }
+  input{
+    border: 0;
+    border-bottom: 1px solid #110404;
+    
+  }
+  label{
+    font-size: 16px;
+  }
+  .forms{
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
